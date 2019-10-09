@@ -1,22 +1,343 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: ;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  display: block;
+  background-color: black;
   color: white;
+  display: grid;
+  justify-content: flex-end;
+  padding: 12.5px;
+  padding-bottom: 15px;
+  padding-right: 450px;
+  font-size: 13px;
 }
 
-.App-link {
-  color: #09d3ac;
+.links-wrappers {
+  display: flex;
+  justify-content: first baseline;
+  margin-left: 20px;
 }
+
+.subMenu {
+  display: flex;
+  justify-content: first baseline;
+  margin-left: 20px;
+}
+
+.wireless {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.wireless:hover {
+  text-decoration: underline red;
+}
+
+.inhome {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.inhome:hover {
+  text-decoration: underline red;
+}
+
+.business {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.business:hover {
+  text-decoration: underline red;
+}
+
+.Phones {
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Phones:hover {
+  text-decoration: underline red;
+}
+
+.stores {
+  padding: 10px;
+  margin-left: 150px;
+  cursor: pointer;
+}
+.stores:hover {
+  text-decoration: underline red;
+}
+
+.Espanol {
+  margin-left: 150px;
+  cursor: pointer;
+}
+
+.Espanol:hover {
+  text-decoration: underline red;
+}
+
+.Signs {
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Signs:hover {
+  text-decoration: underline red;
+}
+
+img {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 490px;
+}
+
+.signIn-register-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 18pt;
+  font-weight: 500;
+}
+
+.SignIn {
+  margin: 0%;
+  margin-left: 200px;
+  font-size: 43px;
+}
+
+.SignIn-Wrapper {
+  margin: 0%;
+}
+
+#rememberUser {
+  margin-left: 200px;
+  border: 2px solid #000000;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.Remember {
+  font-size: 16px;
+  color: #747676;
+  cursor: pointer;
+}
+
+.Register {
+  margin: 0%;
+  font-size: 43px;
+}
+
+.list-wrapper {
+  font-size: 15px;
+  font-weight: 450;
+  margin-bottom: 15px;
+}
+
+.text-wrapper {
+  display: block;
+  margin: 0 0 10px;
+  font-size: 14pt;
+  line-height: 1.42857143;
+  color: #333;
+  font-weight: 400;
+}
+
+.IDToken {
+  color: #747676;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 200px;
+}
+
+.form-control {
+  border-radius: 0px;
+  color: #000000;
+  width: 55%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin: 0 0 0 200px;
+  border: 1px solid #ccc;
+  border-color: #d8dada #d8dada #000000 #d8dada;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.password-control {
+  border-radius: 0px;
+  color: #000000;
+  width: 55%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin: 0 0 10px 200px;
+  border: 1px solid #ccc;
+  border-color: #d8dada #d8dada #000000 #d8dada;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.PasswordToken {
+  color: #747676;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 200px;
+  margin-top: 12px;
+}
+
+.signInBtn {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+  border-radius: 23px;
+  padding-left: 39px;
+  margin-top: 10px;
+  font-size: 14pt;
+  padding: 10px 55px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.signInBtn {
+  margin-left: 200px;
+}
+
+.RegisterBtn {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+  border-radius: 23px;
+  padding-left: 39px;
+  padding-right: 39px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  border-width: 2px;
+  font-size: 14pt;
+  padding: 10px 55px;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.search {
+  border-bottom: 1px solid;
+  max-width: 110px;
+  height: 18px;
+  margin-top: 25px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  font-size: 16px;
+}
+
+.learnMore {
+  text-decoration: underline;
+  font-size: 19px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.learnMore:hover {
+  color: rgb(81, 190, 226);
+}
+
+.ForgotInfo {
+  text-decoration: underline;
+  font-size: 19px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-left: 115px;
+}
+
+.ForgotInfo:hover {
+  color: rgb(81, 190, 226);
+}
+
+.bottom-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 140px;
+  background-color: black;
+  color: white;
+  border-bottom: .5px solid grey
+}
+
+.Apps {
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+.brands {
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.follow {
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.subs {
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.locates {
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.Bottom-Search {
+  font-family: inherit;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  height: 36px;
+  border: 1px solid #333;
+  background: 0 0 !important;
+  color: #fff;
+  font-weight: bold;
+}
+
+.finalLogo {
+  background-color: black;
+
+}
+
+.AppsServicesWrapper {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.brandsWrapper {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.FollowSubWrapper {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.StoreLocateEndWrapper {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
