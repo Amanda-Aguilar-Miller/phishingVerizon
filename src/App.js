@@ -3,28 +3,10 @@ import "./App.css";
 import LinkWrapper from "./navigation/navLinks";
 import MainSection from "./navigation/mainSection";
 import BottomWrappers from "./navigation/bottomWrapper";
+import { BrowserRouter as Switch, Route } from "react-router-dom";
+import Gotcha from "./pages/gotcha";
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      phone: [],
-      number: ""
-    };
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-
-  testCapture = event => {
-    event.preventDefault();
-    console.log(event.target);
-    this.setState({ phone: event.target.value });
-  };
-
   render() {
     return (
       <div className="App">
@@ -36,9 +18,11 @@ export default class App extends Component {
           <hr />
         </div>
         <MainSection />
+        <Switch>
+          <Route exact path="/gotcha" component={Gotcha} />
+        </Switch>
         <BottomWrappers />
 
-        {/* {console.log(this.state.phone)} */}
         <div className="finalLogo">
           <img src={require("./blacklogo.png")} />
         </div>
